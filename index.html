@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Disease Prediction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Heart Disease Prediction</h1>
+    <p class="subtitle">Enter the details below:</p>
+
+    <form id="predictForm">
+
+        <div class="grid">
+
+            <label> Age
+                <input type="number" id="age" required>
+            </label>
+
+            <label> Sex (1 = Male, 0 = Female)
+                <input type="number" id="sex" required>
+            </label>
+
+            <label> Chest Pain Type (0–3)
+                <input type="number" id="cp" required>
+            </label>
+
+            <label> Blood Pressure
+                <input type="number" id="trestbps" required>
+            </label>
+
+            <label> Cholesterol
+                <input type="number" id="chol" required>
+            </label>
+
+            <label> Fasting Blood Sugar (1/0)
+                <input type="number" id="fbs" required>
+            </label>
+
+            <label> Maximum Heart Rate
+                <input type="number" id="thalach" required>
+            </label>
+
+            <label> Exercise Angina (1/0)
+                <input type="number" id="exang" required>
+            </label>
+
+            <label> ST Depression (oldpeak)
+                <input type="number" id="oldpeak" step="0.1" required>
+            </label>
+
+        </div>
+
+        <button type="submit">Predict</button>
+
+    </form>
+
+    <div id="result" class="result"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
